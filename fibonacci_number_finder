@@ -1,0 +1,16 @@
+## Algorithm that finds any numbers of Fibonacci's sequence in the position on "n"
+## Iterative solution taking O(n) time and space
+
+function getNthFib(n){
+	const fibNum = [0, 1];
+	let counter = 3;
+	while (counter <= n){
+		const nextFib = fibNum[0] + fibNum[1];
+		fibNum[0] = fibNum[1];
+		fibNum[1] = nextFib;
+		counter++;
+	}
+	return n > 1 ? fibNum[1] : fibNum[0];
+}
+// Do not edit the line below.
+exports.getNthFib = getNthFib;
