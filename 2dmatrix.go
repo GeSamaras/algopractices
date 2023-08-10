@@ -1,7 +1,7 @@
 package main
 
 func searchMatrix(matrix [][]int, target int) bool {
-	ROWS := len(matrix)
+	ROWS := len(matrix) 
 	COLUMNS := len(matrix[0])
 
 	top := 0 
