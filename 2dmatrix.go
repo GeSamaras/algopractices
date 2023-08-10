@@ -4,7 +4,7 @@ func searchMatrix(matrix [][]int, target int) bool {
 	ROWS := len(matrix)
 	COLUMNS := len(matrix[0])
 
-	top := 0
+	top := 0 
 	bot := ROWS - 1
 
 	for top <= bot {
